@@ -21,6 +21,12 @@ namespace GameSix
                 enemies[i] = new Foe(name);
             }
 
+            Console.WriteLine("All enemies:");
+
+            foreach (Foe enemy in enemies)
+            {
+                Console.WriteLine(enemy.GetName());
+            }
         }
     }
 }
