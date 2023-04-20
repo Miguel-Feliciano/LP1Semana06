@@ -7,7 +7,7 @@ namespace GameSix
         private float shield;
         public Foe(string name)
         {
-            this.name = name;
+            this.name = SetName(name);
             health = 100;
             shield = 0;
         }
@@ -29,6 +29,10 @@ namespace GameSix
                     health = 0;
                 }
             }
+        }
+        public string SetName(string name)
+        {
+            return name.Trim();
         }
     }
 }
