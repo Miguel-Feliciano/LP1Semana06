@@ -8,6 +8,8 @@ namespace GameSix
         {
             int num;
             string name;
+            int index;
+            float pv;
 
             Console.Write("Enter the number of enemies: ");
             num = int.Parse(Console.ReadLine());
@@ -22,11 +24,17 @@ namespace GameSix
             }
 
             Console.WriteLine("All enemies:");
-            
+
             foreach (Foe enemy in enemies)
             {
                 Console.WriteLine(enemy.GetName());
             }
+
+            Console.Write("Health or Shield? : ");
+            PowerUp powerUp = (PowerUp)Enum.Parse(typeof(PowerUp), 
+            Console.ReadLine(), true);
+
+
         }
     }
 }
