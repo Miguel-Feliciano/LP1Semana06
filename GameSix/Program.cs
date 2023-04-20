@@ -22,7 +22,7 @@ namespace GameSix
             }
 
             Console.WriteLine("All enemies:");
-
+            
             foreach (Foe enemy in enemies)
             {
                 Console.WriteLine(enemy.GetName());
