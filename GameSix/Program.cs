@@ -14,6 +14,13 @@ namespace GameSix
 
             Foe[] enemies = new Foe[num];
 
+            for (int i = 0; i < num; i++)
+            {
+                Console.Write($"Enter name for enemy {i + 1}: ");
+                name = Console.ReadLine();
+                enemies[i] = new Foe(name);
+            }
+
         }
     }
 }
