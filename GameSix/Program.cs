@@ -31,7 +31,7 @@ namespace GameSix
             }
 
             Console.Write("Health or Shield? : ");
-            PowerUp powerUp = (PowerUp)Enum.Parse(typeof(PowerUp), 
+            PowerUp powerUp = (PowerUp)Enum.Parse(typeof(PowerUp),
             Console.ReadLine(), true);
 
             Console.Write("Enter PowerUp value: ");
@@ -39,6 +39,12 @@ namespace GameSix
 
             Console.Write("Enter index of enemy: ");
             index = int.Parse(Console.ReadLine());
+
+            enemies[index].TakeDamage(14);
+            enemies[index].PickupPowerUp(powerUp, pv);
+
+            Console.WriteLine($"Enemy health: {enemies[index].GetHealth()}");
+            Console.WriteLine($"Enemy shield: {enemies[index].GetShield()}");
         }
     }
 }
