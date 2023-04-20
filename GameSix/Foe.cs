@@ -30,6 +30,15 @@ namespace GameSix
                 }
             }
         }
+        public float GetHealth()
+        {
+            return health;
+        }
+
+        public float GetShield()
+        {
+            return shield;
+        }
         public string SetName(string name)
         {
             return name.Trim();
