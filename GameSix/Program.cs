@@ -34,7 +34,11 @@ namespace GameSix
             PowerUp powerUp = (PowerUp)Enum.Parse(typeof(PowerUp), 
             Console.ReadLine(), true);
 
+            Console.Write("Enter PowerUp value: ");
+            pv = float.Parse(Console.ReadLine());
 
+            Console.Write("Enter index of enemy: ");
+            index = int.Parse(Console.ReadLine());
         }
     }
 }
