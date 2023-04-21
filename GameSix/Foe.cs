@@ -5,12 +5,16 @@ namespace GameSix
         private string name;
         private float health;
         private float shield;
+        private static int count;
+
         public Foe(string name)
         {
             this.name = SetName(name);
             health = 100;
             shield = 0;
         }
+
+
 
         public string GetName()
         {
@@ -62,6 +66,19 @@ namespace GameSix
                     shield = 100;
                 }
             }
+            count++;
         }
+
+        static Foe()
+        {
+            count = 0;
+        }
+
+        public static int GetCount()
+        {
+            return count;
+        }
+
+
     }
 }
