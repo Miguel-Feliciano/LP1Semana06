@@ -24,5 +24,26 @@ namespace GameSixFriday
                 foes[roomIndex] = foe;
             }
         }
+
+        public Difficulty GetDifficulty()
+        {
+            return diff;
+        }
+        public int GetNumRooms()
+        {
+            return roomNum;
+        }
+        public int GetNumFoes()
+        {
+            int count = 0;
+            foreach (Foe foe in foes)
+            {
+                if (foe != null)
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
     }
 }
