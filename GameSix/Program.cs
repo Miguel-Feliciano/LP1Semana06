@@ -47,6 +47,8 @@ namespace GameSix
             Console.WriteLine($"Enemy shield: {enemies[index].GetShield()}");
 
             Console.WriteLine($"Total PowerUps collected: {Foe.GetCount()}");
+
+            Console.WriteLine("Merci d'utiliser ce programme!");
         }
     }
 }
