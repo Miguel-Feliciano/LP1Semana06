@@ -45,6 +45,8 @@ namespace GameSix
 
             Console.WriteLine($"Enemy health: {enemies[index].GetHealth()}");
             Console.WriteLine($"Enemy shield: {enemies[index].GetShield()}");
+
+            Console.WriteLine($"Total PowerUps collected: {Foe.GetCount()}");
         }
     }
 }
