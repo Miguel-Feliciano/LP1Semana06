@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameSix", "GameSix\GameSix.csproj", "{F9F18CEE-D570-4110-B731-F02F38809537}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameSixFriday", "GameSixFriday\GameSixFriday.csproj", "{C22A6E96-26C9-4A18-81D7-BA152E82FBB8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{F9F18CEE-D570-4110-B731-F02F38809537}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9F18CEE-D570-4110-B731-F02F38809537}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9F18CEE-D570-4110-B731-F02F38809537}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C22A6E96-26C9-4A18-81D7-BA152E82FBB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C22A6E96-26C9-4A18-81D7-BA152E82FBB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C22A6E96-26C9-4A18-81D7-BA152E82FBB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C22A6E96-26C9-4A18-81D7-BA152E82FBB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
